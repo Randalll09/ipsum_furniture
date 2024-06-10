@@ -136,7 +136,7 @@ Error generating stack: `+i.message+`
       }
     }
   }
-`,UD=()=>{const e=Gl(dp),t=Gl(FD),[n,r]=P.useState(!1);return E.jsxs(jD,{hover:n,children:[E.jsxs("div",{className:"left",children:[E.jsx(St,{to:"/",children:E.jsx("img",{src:"/assets/logo.svg"})}),E.jsxs("ul",{children:[E.jsx("li",{children:E.jsx(St,{to:"/",children:"HOME"})}),E.jsx("li",{}),E.jsxs("li",{onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[E.jsx(St,{to:"/shop/all",children:"SHOP"}),E.jsxs("ul",{className:"dropdown",onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[E.jsx("li",{children:E.jsx(St,{to:"/shop/all",children:"ALL"})}),E.jsx("li",{children:E.jsx(St,{to:"/shop/sofa",children:"SOFA"})}),E.jsx("li",{children:E.jsx(St,{to:"/shop/bed",children:"BED"})}),E.jsx("li",{children:E.jsx(St,{to:"/shop/other",children:"OTHER"})})]})]}),E.jsx("li",{})]})]}),E.jsx("div",{className:"right",children:e?E.jsxs(St,{to:"/cart",children:["My Cart (",t.length,")"]}):E.jsx(St,{to:"/login",children:"LOGIN"})})]})},BD=gt.footer`
+`,UD=()=>{const e=Gl(dp),t=Gl(FD),[n,r]=P.useState(!1);return E.jsxs(jD,{hover:n,children:[E.jsxs("div",{className:"left",children:[E.jsx(St,{to:"/",children:E.jsx("img",{src:"./assets/logo.svg"})}),E.jsxs("ul",{children:[E.jsx("li",{children:E.jsx(St,{to:"/",children:"HOME"})}),E.jsx("li",{}),E.jsxs("li",{onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[E.jsx(St,{to:"/shop/all",children:"SHOP"}),E.jsxs("ul",{className:"dropdown",onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[E.jsx("li",{children:E.jsx(St,{to:"/shop/all",children:"ALL"})}),E.jsx("li",{children:E.jsx(St,{to:"/shop/sofa",children:"SOFA"})}),E.jsx("li",{children:E.jsx(St,{to:"/shop/bed",children:"BED"})}),E.jsx("li",{children:E.jsx(St,{to:"/shop/other",children:"OTHER"})})]})]}),E.jsx("li",{})]})]}),E.jsx("div",{className:"right",children:e?E.jsxs(St,{to:"/cart",children:["My Cart (",t.length,")"]}):E.jsx(St,{to:"/login",children:"LOGIN"})})]})},BD=gt.footer`
   background-color: #d5ded1;
   height: 312px;
   padding: 40px ${de(140)};
@@ -179,7 +179,7 @@ Error generating stack: `+i.message+`
   height: ${de(460)};
   width: 100vw;
   overflow: hidden;
-  background-image: url('/assets/mainbanner.jpg');
+  background-image: url('./assets/mainbanner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 30%;
@@ -262,7 +262,7 @@ Error generating stack: `+i.message+`
       background-color: ${({theme:e})=>e.light};
     }
   }
-`,Ix=({name:e,id:t,price:n})=>E.jsx(St,{to:`/shop/${t}`,children:E.jsxs(cI,{children:[E.jsx("img",{src:`/assets/items/${t}.jpg`}),E.jsxs("div",{children:[E.jsx("p",{children:e}),E.jsxs("p",{children:[n,"$"]})]})]})}),fI=[{id:0,position:"left",src:"red.png",title:"Red Passion",txt:`Crimson red is the color of passion and sunset. Feel the fire within your heart.
+`,Ix=({name:e,id:t,price:n})=>E.jsx(St,{to:`/shop/${t}`,children:E.jsxs(cI,{children:[E.jsx("img",{src:`./assets/items/${t}.jpg`}),E.jsxs("div",{children:[E.jsx("p",{children:e}),E.jsxs("p",{children:[n,"$"]})]})]})}),fI=[{id:0,position:"left",src:"red.png",title:"Red Passion",txt:`Crimson red is the color of passion and sunset. Feel the fire within your heart.
 
 Let the passion run wild...`,txtAlign:"right",designer:"Kim Rachel",width:408,top:46},{id:1,position:"left",src:"zen.png",title:"Zen",txt:`noun
 a Japanese school of Mahayana Buddhism emphasizing the value of meditation and intuition.`,txtAlign:"right",designer:"Kim Rachel",width:462,top:224},{id:2,position:"left",src:"future.png",title:"Living the Future",txt:`The future is now.
@@ -279,7 +279,7 @@ Your living room will be the perfect place of relaxation.`,txtAlign:"left",desig
   &.closed {
     transition: all 0.4s ease-in-out;
     background-position: 50%;
-    background-image: url('/assets/gallery/${e=>e.src}');
+    background-image: url('./assets/gallery/${e=>e.src}');
     cursor: pointer;
     /* border-bottom: 5px solid ${({theme:e})=>e.light}; */
     &::after {
@@ -418,7 +418,7 @@ Your living room will be the perfect place of relaxation.`,txtAlign:"left",desig
 `,gI=()=>E.jsxs(mI,{children:[E.jsx(lI,{}),E.jsxs("section",{className:"for",children:[E.jsxs("div",{children:[E.jsx(dl,{title:"FOR YOU"}),E.jsx(St,{to:"/shop",children:"See More..."})]}),E.jsx("ul",{children:_s.slice(6,11).map(e=>E.jsx("li",{children:E.jsx(Ix,{name:e.name,id:e.id,price:e.price,category:e.category})},e.id))})]}),E.jsxs("section",{className:"gallery",children:[E.jsx(dl,{title:"GALLERY"}),E.jsx(pI,{})]}),E.jsx("section",{className:"reviews",children:E.jsx("div",{children:E.jsx(dl,{title:"REVIEWS"})})})]}),yI=gt.header`
   > header {
     height: 320px;
-    background-image: url('/assets/banner-${({category:e})=>e}.jpg');
+    background-image: url('./assets/banner-${({category:e})=>e}.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -558,7 +558,7 @@ Your living room will be the perfect place of relaxation.`,txtAlign:"left",desig
       }
     }
   }
-`,wI=()=>{const{id:e}=mT(),t=zh(),[n,r]=P.useState(1),o=_s[Number(e)],i=Gl(dp);return E.jsxs(SI,{children:[E.jsx("img",{src:`/assets/items/${e}.jpg`}),E.jsxs("div",{className:"info",children:[E.jsxs("div",{className:"head",children:[E.jsxs("ul",{children:[E.jsx("li",{children:E.jsx(St,{to:"/shop/all",children:"Shop"})}),E.jsx("li",{children:"|"}),E.jsx("li",{children:E.jsx(St,{to:`/shop/${o.category}`,children:o.category[0].toUpperCase()+o.category.slice(1)})})]}),E.jsx("h2",{children:o.name})]}),E.jsxs("div",{className:"body",children:[E.jsx("p",{children:"Praesent sed pharetra leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras aliquet, erat eu vehicula interdum, urna dui tincidunt erat, et imperdiet turpis felis non sapien. Sed varius, purus nec laoreet malesuada, urna tortor consectetur lectus, ac euismod diam mauris non augue. Mauris sed efficitur ante, at mollis nulla."}),E.jsxs("div",{className:"cart",children:[E.jsx(Es,{color:"light",onClick:()=>i?console.log(i):t("/login"),children:"ADD TO CART"}),E.jsxs("div",{className:"input",children:[E.jsx("button",{onClick:()=>r(s=>s<=1?1:s-1),disabled:n<=1,children:E.jsx("span",{children:"-"})}),E.jsx("input",{type:"number",value:n,min:1,onChange:()=>null}),E.jsx("button",{onClick:()=>r(s=>s>=10?s:s+1),disabled:n>=10,children:E.jsx("span",{children:"+"})})]})]})]})]})]})},xI=gt.div``,RI=()=>E.jsx(xI,{}),Ox=gt.div`
+`,wI=()=>{const{id:e}=mT(),t=zh(),[n,r]=P.useState(1),o=_s[Number(e)],i=Gl(dp);return E.jsxs(SI,{children:[E.jsx("img",{src:`./assets/items/${e}.jpg`}),E.jsxs("div",{className:"info",children:[E.jsxs("div",{className:"head",children:[E.jsxs("ul",{children:[E.jsx("li",{children:E.jsx(St,{to:"/shop/all",children:"Shop"})}),E.jsx("li",{children:"|"}),E.jsx("li",{children:E.jsx(St,{to:`/shop/${o.category}`,children:o.category[0].toUpperCase()+o.category.slice(1)})})]}),E.jsx("h2",{children:o.name})]}),E.jsxs("div",{className:"body",children:[E.jsx("p",{children:"Praesent sed pharetra leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras aliquet, erat eu vehicula interdum, urna dui tincidunt erat, et imperdiet turpis felis non sapien. Sed varius, purus nec laoreet malesuada, urna tortor consectetur lectus, ac euismod diam mauris non augue. Mauris sed efficitur ante, at mollis nulla."}),E.jsxs("div",{className:"cart",children:[E.jsx(Es,{color:"light",onClick:()=>i?console.log(i):t("/login"),children:"ADD TO CART"}),E.jsxs("div",{className:"input",children:[E.jsx("button",{onClick:()=>r(s=>s<=1?1:s-1),disabled:n<=1,children:E.jsx("span",{children:"-"})}),E.jsx("input",{type:"number",value:n,min:1,onChange:()=>null}),E.jsx("button",{onClick:()=>r(s=>s>=10?s:s+1),disabled:n>=10,children:E.jsx("span",{children:"+"})})]})]})]})]})]})},xI=gt.div``,RI=()=>E.jsx(xI,{}),Ox=gt.div`
   margin-top: 132px;
   width: 100vw;
   display: flex;
